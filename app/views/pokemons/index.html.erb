@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pokemons</h1>
+
+<%= link_to "New pokemon", new_pokemon_path %>
+
+<div id="pokemons">
+  <% @pokemons.each do |pokemon| %>
+    <p>
+      <%= pokemon.name %>
+      <%= link_to pokemon do %>
+        <%= image_tag 'a.png', alt: 'icon', title: 'Show this Pokeball...', size: 20 %>
+      <% end %>
+    </p>
+  <% end %>
+</div>
