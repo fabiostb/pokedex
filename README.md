@@ -1,24 +1,21 @@
-# README
+# Pokédex!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![This is an image](https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-black-and-white/4/4e/Pok%C3%A9dex_BW.png)
 
-Things you may want to cover:
+## A Ruby on Rails CRUD 
 
-* Ruby version
+Rails 7.0.2.3\
+Puma version: 5.6.4 (ruby 3.1.1-p18) ("Birdie's Version")\
+SQLite3
 
-* System dependencies
+### Setup:
+-Create the database and import the pokemons (/lib/seeds/pokemon.csv)
+```sh
+rails db:migrate
+rails db:seed
+``` 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-Run the server
+```sh
+rails server
+``` 
